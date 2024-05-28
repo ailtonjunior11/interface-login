@@ -117,21 +117,42 @@ h1 {
   text-decoration: underline;
 }
 
+.autoria {
+  position: absolute;
+  bottom: 10px;
+  background: transparent;
+  border: 1px solid #ffffff49;
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  width: 39%;
+  text-align: center;
+  border-radius: 20px 0px 20px 0px;
+  color: #fff;
+}
+
+.autoria a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 460px) {
   body {
     background-image: url("./assets/background-porsche.jpeg");
+    backdrop-filter: blur(5px);
   }
 
   .container {
     width: 350px;
     padding: 10px 20px;
-    background: #003dc021;
     backdrop-filter: blur(none);
+    background: #ffffff2a;
   }
 
   h1 {
-    font-size: 35px;
-    font-weight: 600;
+    font-weight: 400;
+    font-family: "Racing Sans One", sans-serif;
   }
 
   .input-container {
@@ -158,5 +179,10 @@ h1 {
 
   .submit-button:active {
     background-color: transparent;
+  }
+
+  .autoria {
+    bottom: 50px;
+    width: 50%;
   }
 }
